@@ -1,6 +1,7 @@
 import React from 'react'
 import './service.css'
-import { BiAperture } from "react-icons/bi";
+import { BiEdit, BiBuildingHouse } from "react-icons/bi";
+import { TbRoad } from "react-icons/tb";
 
 
 
@@ -13,8 +14,24 @@ const Service = () => {
             <div className='service__container container grid'>
                 <div className='service__content'>
                     <div>
-                        <BiAperture/>
+                        <BiEdit className='service__icons'/>
+                        <h3 className='service__title'>Test Naslov</h3>
                     </div>
+                    <p className='service__descritpion'>Izrada projektno tehničke dokumentacije za izgradnju i održavanje svih vrsta puteva i ulica sa pratećim studijama i elaboratima.</p>
+                </div>
+                <div className='service__content'>
+                    <div>
+                        <BiBuildingHouse className='service__icons'/>
+                        <h3 className='service__title'>Test Naslov</h3>
+                    </div>
+                    <p className='service__descritpion'>Izrada projektno tehničke dokumentacije za izgradnju i održavanje svih vrsta puteva i ulica sa pratećim studijama i elaboratima.</p>
+                </div>
+                <div className='service__content'>
+                    <div>
+                        <TbRoad className='service__icons'/>
+                        <h3 className='service__title'>Test Naslov</h3>
+                    </div>
+                    <p className='service__descritpion'>Izrada projektno tehničke dokumentacije za izgradnju i održavanje svih vrsta puteva i ulica sa pratećim studijama i elaboratima.</p>
                 </div>
             </div>
         </section>
