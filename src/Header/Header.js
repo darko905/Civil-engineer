@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './header.css';
+import { MdClose } from "react-icons/md";
+import { FaBars } from "react-icons/fa";
 
 
 const Header = () => {
@@ -35,34 +37,29 @@ const Header = () => {
                             </a>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='' onClick={() => setActiveNav('')} className={activeNav === "" ? "nav__link active-link" : "nav__link"}>
+                            <a href='#service' onClick={() => setActiveNav('#service')} className={activeNav === "#service" ? "nav__link active-link" : "nav__link"}>
                                 USLUGE
                             </a>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='' onClick={() => setActiveNav('')} className={activeNav === "" ? "nav__link active-link" : "nav__link"}>
+                            <a href='#project' onClick={() => setActiveNav('#project')} className={activeNav === "#project" ? "nav__link active-link" : "nav__link"}>
                                 PROJEKTI
                             </a>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='' onClick={() => setActiveNav('')} className={activeNav === "" ? "nav__link active-link" : "nav__link"}>
-                                LOKACIJA
-                            </a>
-                        </li>
-                        <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='' onClick={() => setActiveNav('')} className={activeNav === "" ? "nav__link active-link" : "nav__link"}>
+                            <a href='#contact' onClick={() => setActiveNav('#contact')} className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
                                 KONTAKT
                             </a>
                         </li>
                     </ul>
                     
-                    <i className="uil uil-times nav__close" onClick={()=> showMenu(!Toogle)}></i>
                     
+                    <MdClose className=" nav__close" onClick={()=> showMenu(!Toogle)}/>
                     
                 </div>
 
                 <div className='nav__toggle' onClick={()=> showMenu(!Toogle)}>
-                    <i className="uil uil-bars"></i>
+                    <FaBars/>
                 </div>
             </nav>
         </header>

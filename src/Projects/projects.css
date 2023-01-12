@@ -1,0 +1,16 @@
+.work__container{
+    grid-template-columns: repeat(3, 270px);
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    .work__container{
+        grid-template-columns: repeat(2, 270px);
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .work__container{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import AboutImg from '../assets/about-img.jpeg'
+import {  MdPhoneEnabled } from "react-icons/md";
 
 const About = () => {
     return (
@@ -17,7 +18,7 @@ const About = () => {
                     </p>
                     <a>
                         <button className='button button--flex'>
-                            Kontakt
+                            Kontakt <MdPhoneEnabled/>
                         </button>
                     </a>
                 </div>

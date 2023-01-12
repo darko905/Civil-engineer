@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './qualification.css'
+import {  FaGraduationCap, FaBriefcase } from "react-icons/fa";
+import {  SlCalender } from "react-icons/sl";
 
 const Qualification = () => {
     const [toggleState, setToggleState] = useState(1);
@@ -17,13 +19,13 @@ const Qualification = () => {
                     <div className={toggleState === 1 ? 'qualification__button qualification__active button-flex' : 'qualification__button button-flex'}
                     onClick={()=> toggleTab(1)}
                     >
-                        <i className='uil uil-graduation-cap qualification__icon'></i>Edukacija
+                        <FaGraduationCap className='qualification__icon'/> Edukacija
                     </div>
 
                     <div className={toggleState === 2 ? 'qualification__button qualification__active button-flex' : 'qualification__button button-flex'}
                     onClick={()=> toggleTab(2)}
                     >
-                        <i className='uil uil-briefcase-alt qualification__icon'></i>Iskustvo
+                        <FaBriefcase className='qualification__icon'/> Iskustvo
                     </div>
 
                 </div>
@@ -35,7 +37,7 @@ const Qualification = () => {
                                 <h3 className='qualification__title'>Građevniska skola</h3>
                                 <span className='qualification__subtitle'>Bratunac</span>
                                 <div className='qualification__calender'>
-                                    <i className='uil uil-calender-alt'></i>2011 - 2015
+                                    <SlCalender/> 2011 - 2015
                                 </div>
                             </div>
 
@@ -57,7 +59,7 @@ const Qualification = () => {
                                 <h3 className='qualification__title'>Fakultet građevinarstva</h3>
                                 <span className='qualification__subtitle'>Subotica - Institut</span>
                                 <div className='qualification__calender'>
-                                    <i className='uil uil-calender-alt'></i>2015 - 2019
+                                <SlCalender/> 2015 - 2019
                                 </div>
                             </div>
                         </div>
@@ -67,7 +69,7 @@ const Qualification = () => {
                                 <h3 className='qualification__title'>Master</h3>
                                 <span className='qualification__subtitle'>Subotica - Institut</span>
                                 <div className='qualification__calender'>
-                                    <i className='uil uil-calender-alt'></i>2019 - 2020
+                                <SlCalender/> 2019 - 2020
                                 </div>
                             </div>
 
@@ -89,7 +91,7 @@ const Qualification = () => {
                                 <h3 className='qualification__title'>Lorem</h3>
                                 <span className='qualification__subtitle'>Novi Sad - Institut</span>
                                 <div className='qualification__calender'>
-                                    <i className='uil uil-calender-alt'></i>2000- 2000
+                                <SlCalender/> 2000- 2000
                                 </div>
                             </div>
                         </div>
@@ -101,7 +103,7 @@ const Qualification = () => {
                                 <h3 className='qualification__title'>Lorem ispum 1</h3>
                                 <span className='qualification__subtitle'>Lorem ipsum - Institut</span>
                                 <div className='qualification__calender'>
-                                    <i className='uil uil-calender-alt'></i>2000 - Present
+                                <SlCalender/> 2000 - Present
                                 </div>
                             </div>
 
@@ -123,7 +125,7 @@ const Qualification = () => {
                                 <h3 className='qualification__title'>Lorem ispum 2</h3>
                                 <span className='qualification__subtitle'>Lorem ipsum- Institut</span>
                                 <div className='qualification__calender'>
-                                    <i className='uil uil-calender-alt'></i>2000 - Present
+                                <SlCalender/> 2000 - Present
                                 </div>
                             </div>
                         </div>
@@ -133,7 +135,7 @@ const Qualification = () => {
                                 <h3 className='qualification__title'>lorem ispum 3</h3>
                                 <span className='qualification__subtitle'>Lorem - ispum</span>
                                 <div className='qualification__calender'>
-                                    <i className='uil uil-calender-alt'></i>2000 - Present
+                                <SlCalender/> 2000 - Present
                                 </div>
                             </div>
 
